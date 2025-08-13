@@ -157,7 +157,7 @@ PUT /users/{id}
 
 ### 3) 일정 (Schedule)
 
-POST /schedules
+-POST /schedules
 
 설명: 일정 생성 (보호)
 
@@ -170,6 +170,7 @@ POST /schedules
 }
 ``` 
 응답: 201 Created (또는 200 OK), 생성된 Schedule JSON
+
 
 - GET /schedules
 
@@ -221,7 +222,8 @@ PUT /schedules/{id}
   "createdAt": "2025-08-12T10:10:00",
   "updatedAt": "2025-08-12T10:10:00"
 }
-``` 
+```
+
 - GET /comments/schedule/{scheduleId}
 
 설명: 특정 일정의 댓글 목록 (보호)
