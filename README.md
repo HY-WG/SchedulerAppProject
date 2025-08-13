@@ -103,7 +103,7 @@ POST /auth/logout
 
 ### 2) 사용자 (회원가입/관리)
 
-목록 조회, 생성, 수정, 삭제 중심. 
+- 목록 조회, 생성, 수정, 삭제 중심. 
 
 POST /users
 
@@ -131,7 +131,7 @@ POST /users
 
 GET /users
 
-설명: 사용자 목록 (보호)
+- 설명: 사용자 목록 (보호)
 
 응답: 200 OK, User 배열
 
@@ -149,7 +149,7 @@ PUT /users/{id}
 ``` 
 응답: 200 OK, 수정된 User JSON
 
-DELETE /users/{id}
+- DELETE /users/{id}
 
 설명: 사용자 삭제
 
@@ -171,7 +171,7 @@ POST /schedules
 ``` 
 응답: 201 Created (또는 200 OK), 생성된 Schedule JSON
 
-GET /schedules
+- GET /schedules
 
 설명: 일정 목록 (보호)
 
@@ -191,7 +191,7 @@ PUT /schedules/{id}
 ``` 
 응답: 200 OK, 수정된 Schedule JSON
 
-DELETE /schedules/{id}
+- DELETE /schedules/{id}
 
 설명: 일정 삭제 (보호)
 
@@ -199,7 +199,7 @@ DELETE /schedules/{id}
 
 ### 4) 댓글 (Comment)
 
-POST /comments
+- POST /comments
 
 설명: 댓글 생성 (보호)
 
@@ -222,13 +222,13 @@ POST /comments
   "updatedAt": "2025-08-12T10:10:00"
 }
 ``` 
-GET /comments/schedule/{scheduleId}
+- GET /comments/schedule/{scheduleId}
 
 설명: 특정 일정의 댓글 목록 (보호)
 
 응답: 200 OK, CommentResponseDto 배열
 
-PUT /comments/{id}
+- PUT /comments/{id}
 
 설명: 댓글 수정 (보호)
 
@@ -242,7 +242,7 @@ PUT /comments/{id}
 ``` 
 응답: 200 OK, 수정된 CommentResponseDto
 
-DELETE /comments/{id}
+- DELETE /comments/{id}
 
 설명: 댓글 삭제 (보호)
 
